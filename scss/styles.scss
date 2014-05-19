@@ -1,0 +1,481 @@
+@import '_reset.scss';
+
+// VARIABLE
+
+$dc-red: #ef3925;
+$dark-red: #dd1c07;
+$copy-black: #333333;
+$hover-color: #666666;
+$light-grey: #cccccc;
+
+$open-sans:'Open Sans', Helvetica, Arial, sans-serif;
+$scala-sans: 'ff-scala-sans-web', Helvetica, Arial, sans-serif;
+
+
+
+
+
+html,body{
+	height: 100%;
+	min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body{
+	font-family: $open-sans;
+	-webkit-font-smoothing:antialiased;
+	position: relative;
+	min-height: 100%;
+}
+
+a{
+	color: $dc-red;
+	text-decoration: none;
+
+	&:visited{
+
+		color: none;
+		text-decoration: none;
+	}
+}
+
+h1{
+	font-family: $scala-sans;
+	font-size: 30px;
+	font-weight: bold;
+	padding-bottom: 30px;
+	line-height: 1.2;
+	z-index: 85;
+}
+
+h2{
+	font-family: $scala-sans;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+p{
+	line-height: 1.8;
+	font-size: 18px;
+	font-family: $scala-sans;
+}
+
+
+.dc-button{
+
+	button{
+
+		background-color: $dc-red;
+		font-size: 14px;
+		padding: 14px 26px;
+		border: none;
+		margin:30px 0 0 0;
+		color: white;
+		font-family: $open-sans;
+
+		&:hover{
+
+			background-color: $dark-red;
+			transition: all .2s ease-in-out;
+			-webkit-transition: all .2s ease-in-out;
+
+		}
+	}
+}
+.container{
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 2%;
+}  
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+
+.feature-image{
+	width: 100%;
+}
+
+
+// ~~~~~~~~~~~~~~~~~~ Hero Shot ~~~~~~~~~~~~~~~~~~ 
+.cover{
+	position: relative;
+	display: table;
+	height: 100%;
+	width:100%;
+	max-height: 1200px;
+
+	
+	
+
+
+	.header-bg {
+	    background: url('../images/rui/rui-hero.png') no-repeat center center fixed; 
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-position:center;
+	    height: 100%;
+	    
+	    background-attachment: scroll;
+
+	}
+}
+
+
+
+
+
+//Full Page Slider
+
+#slides{
+	max-height: 100%;
+}
+
+.full-page-slide{
+
+	.full-page-slide-right{
+		background: url('../images/full-slide-nav-right.png') no-repeat;
+		height: 116px;
+		width: 70px;
+		margin: 20px;
+
+	}
+	.full-page-slide-left{
+		background: url('../images/full-slide-nav-left.png') no-repeat;
+		height: 116px;
+		width: 70px;
+		margin: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+// ~~~~~~~~~~~~~~~~~~ Navigation ~~~~~~~~~~~~~~~~~~ 
+
+.gradient-div{
+	z-index: 3;
+	position: absolute;
+	width: 100%;
+	top:0;
+	left:0;
+	background: url('../images/nav-gradient.png') repeat-x;
+	height: 150px;
+}
+
+
+.navigation{
+	position: relative;
+	height: 52px;
+	z-index: 2;
+	
+	.company-info{
+
+		position: absolute;
+		top:0;
+		left:0;
+		width: 50%;
+
+		.dc-logo{
+			float: left;
+			padding: 0 2%;
+		}
+		.tag-line{
+			margin-top: 15px;
+			font-family: $scala-sans;
+
+		}
+
+	}
+	.menu-icon{
+		display: none;
+		
+
+	}
+	.main-menu{
+		position: absolute;
+		right: 0;
+		top: 20px;
+
+		li{
+
+			float: left;
+			margin-left:20px;
+
+			a{
+				color: $copy-black;
+				padding: 20px 20px 15px;
+				font-size:24px;
+
+				&:hover{
+					background-color: $hover-color;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+
+// ~~~~~~~~~~~~~~~~~~ INTRODUCTION  ~~~~~~~~~~~~~~~~~~ 
+
+	.intro-wrapper-mobile{
+		display: none;
+		
+	}
+
+	.intro-wrapper{
+		z-index: 3;
+		position: absolute;
+		bottom: 15%;
+		left:0;
+		width: 100%;
+		
+
+		.intro-content{
+			box-sizing: border-box;
+			background: url('../images/white-trans-bg.png');
+			padding: 30px;
+			width: 420px;
+			float:left;
+			p{
+			
+			color: $copy-black;
+			}
+
+			h1{
+				color: $copy-black;
+			}
+
+		}
+			
+	}
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~  Home page Content ~~~~~~~~~~~~~~~~~~
+	
+.founded{
+	width: 75%;
+	margin: 50px 0;
+}
+
+
+.top-down-shot{
+	width: 100%;
+	height: 332px;
+	position: relative;
+	overflow: hidden;
+	
+
+	img{
+
+	   position: absolute;
+	   left: 50%;
+	   top: 50%;
+	   -webkit-transform: translateY(-50%) translateX(-50%);
+	}
+	
+
+
+
+}
+
+
+.client-brands{
+	margin: 50px 0;
+
+	.client-brands-copy{
+		width: 60%;
+		float: left;
+	}
+
+	#brands-caro{
+		width: 35%;
+		float: right;
+
+		.slide-image{
+
+			img{
+				width: 100%;
+				
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~  CLIENT PAGE CONENT ~~~~~~~~~~~~~~~~~~
+
+.content{
+	margin-top: 90px;
+
+
+	.feature-image{
+
+		margin: 50px 0 100px 0;
+	}
+
+	.quote{
+		margin-top: 100px;
+
+		.quote-photo{
+			float: left;
+			width: 25%;
+			
+
+			img{
+
+				
+			}
+		}
+
+		.quote-copy{
+			display: inline-block;
+			padding-left: 5%;
+			width: 70%;
+
+			h3{
+				font-size: 30px;
+			}
+
+			p{	
+				margin-top: 25px;
+				font-size: 18px;
+				font-style: italic;
+
+			}
+		}
+
+	}
+
+
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~
+
+.footer{
+	margin-top:75px;
+	padding-bottom: 100px;  
+	padding-top:30px;
+	border-top: 1px $light-grey solid;
+
+	.company-info{
+		height: 52px;
+		margin-bottom: 30px;
+		.dc-logo{
+			float: left;
+		}
+		.tag-line{
+			float: left;
+			padding: 8px 0 0 20px;
+		}
+		.back-to-top{
+			background: url('../images/back-to-top.png') no-repeat center;
+			width: 27px;
+			height: 20px;
+			padding: 10px;
+			float: right;
+		}
+	}
+
+	.footer-columns{
+
+
+		.column{
+
+			float: left;
+			width: 30%;
+			padding-right: 5%;
+			
+		}
+
+		& div:nth-child(3){
+			padding-right: 0;
+		}
+
+
+		.footer-contact{
+		
+			.phone-number{
+				color: $dc-red;
+			}
+
+			address{
+				line-height: 1.5;
+			}
+		}
+
+		.footer-social{
+		
+		}
+
+		.footer-newsletter{
+
+		
+			form{
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				font-size: 0;
+				
+			}
+			.email-input{
+				-webkit-appearance: none;
+				border-radius: 0;
+				box-sizing: border-box;
+				width: 70%;
+				border: none;
+				background: $light-grey;
+				padding: 10px;
+				margin: 0;
+				height: 40px;
+			
+				font-size: 14px;
+			
+			}
+
+			.email-submit{
+				border-radius: 0;
+				-webkit-appearance: none;
+				box-sizing: border-box;
+				width: 30%;
+				color: white;
+				background: $dc-red;
+				padding: 0;
+				margin: 0;
+				border:none;
+				height: 40px;
+				
+				font-size: 14px;
+			}
+
+
+		}
+	}
+}
+
+
+@import '_media-queries.scss';
+
